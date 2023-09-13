@@ -11,8 +11,8 @@ function Examples() {
                 <h2 className='text-[#F69A6B] font-bold'>#HostedOnCubicCove</h2>
             </div>
             <div className='max-w-7xl'>
-                <Scrollbars style={{ width: 709, height: 600 }}>
-                    <div className='flex gap-4'>
+                <Scrollbars style={{ width: 1050, height: 600 }}>
+                    <div className='flex gap-4 '>
                         <img src={image1} alt="ex-1" className='hover:scale-110' style={{ transition: 'all 0.3s ease-out' }} />
                         <img src={image2} alt="ex-2" className='hover:scale-110' style={{ transition: 'all 0.3s ease-out' }} />
                         <img src={image3} alt="ex-3" className='hover:scale-110' style={{ transition: 'all 0.3s ease-out' }} />
