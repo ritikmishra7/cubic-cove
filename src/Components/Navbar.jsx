@@ -1,12 +1,16 @@
 import React from 'react'
 import Logo from '../assets/images/logo.png'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 function Navbar() {
+    const location = useLocation()
+    const navigate = useNavigate()
     return (
         <div className='flex justify-between items-center px-3 max-w-6xl mx-auto py-2'>
             <div className='flex justify-start items-center gap-2'>
                 <img src={Logo} alt="logo" width={60} height={60} />
                 <p className='text-white text-xl'>Cubic Cove</p>
+                {location.pathname === '/login' ? <p className='text-white text-lg hover:border-b-2 hover:border-white ml-4 hover:cursor-pointer px-2 py-2' onClick={() => navigate('/')}> DASHBOARD</p> : null}
             </div>
             <div className='flex justify-start items-center gap-2 mr-10 text-white'>
                 <div className="twitter-logo flex flex-wrap justify-center content-center cursor-pointer text-white hover:text-[#ea580c]">
